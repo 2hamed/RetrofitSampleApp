@@ -17,7 +17,6 @@ public class MainActivity extends AppCompatActivity {
 		retrofit = new Retrofit.Builder()
 				.addConverterFactory(GsonConverterFactory.create())
 				.build();
-
-
+		MyApi myApi = retrofit.create(MyApi.class);
 	}
 }
